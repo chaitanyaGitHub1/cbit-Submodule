@@ -1,0 +1,375 @@
+@charset "utf-8";
+/*
+Template Name: Academic Education V2
+Author: <a href="http://www.os-templates.com/">OS Templates</a>
+Author URI: http://www.os-templates.com/
+Licence: Free to use under our free template licence terms
+Licence URI: http://www.os-templates.com/template-terms
+File: Layout CSS
+*/
+
+.wrapper{
+    background: cadetblue;
+    border-bottom: 1px solid #2b313d;
+    width: auto 100%;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+   background-color: black;
+    padding: 10px;
+  }
+
+ .top_C{
+     background-color: #06213F;
+ }
+
+  .tem{
+    border: 15px solid #e5127d;
+    padding: 10px;
+    margin: 20px;
+  }
+
+  
+  
+
+
+/* Navigation
+--------------------------------------------------------------------------------------------------------------- */
+
+nav ul,
+nav ol {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+#mainav .drop::after,
+#mainav li li .drop::after,
+#breadcrumb li a::after,
+.sidebar nav a::after {
+    position: absolute;
+    font-family: "FontAwesome";
+    font-size: 10px;
+    line-height: 30px;
+}
+
+/* Top Navigation */
+
+#mainav {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+#mainav ul {
+    top: 30px;
+}
+
+#mainav ul ul {
+    z-index: 9999;
+    position: absolute;
+    width: 200px;
+}
+
+#mainav ul ul ul {
+    left: 200px;
+    top: 0;
+}
+
+#mainav li {
+    display: inline-block;
+    position: relative;
+    margin: 0 20px 0 0;
+    padding: 0;
+}
+
+#mainav li:last-child {
+    margin-right: 0;
+}
+
+#mainav li li {
+    width: 100%;
+    margin: 0;
+    text-align: left;
+    text-transform: none;
+}
+
+#mainav li a {
+    display: block;
+    padding: 0;
+}
+
+#mainav li li a {
+    border: solid;
+    border-width: 0 0 1px 0;
+}
+
+#mainav li li:last-child a {
+    border-bottom: none;
+}
+
+#mainav .drop {
+    padding-left: 15px;
+}
+
+#mainav li li a,
+#mainav li li .drop {
+    display: block;
+    margin: 0;
+    padding: 10px 15px;
+}
+
+#mainav .drop::after,
+#mainav li li .drop::after {
+    content: "\f0d7";
+}
+
+#mainav .drop::after {
+    top: 5px;
+    left: 5px;
+}
+
+#mainav li li .drop::after {
+    top: 15px;
+    left: 5px;
+}
+
+#mainav ul ul {
+    display: none;
+}
+
+#mainav ul li:hover > ul {
+    display: block;
+}
+
+#mainav ul li a:hover {
+    color: white !important;
+}
+
+#mainav form {
+    display: none;
+    margin: 0;
+    padding: 0;
+}
+
+#mainav form select,
+#mainav form select option {
+    display: block;
+    cursor: pointer;
+    outline: none;
+}
+
+#mainav form select {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid;
+}
+
+#mainav form select option {
+    margin: 5px;
+    padding: 0;
+    border: none;
+}
+
+/* ------------------------------------------------------------------------------------------------------------ */
+
+/* Rounded Corners
+--------------------------------------------------------------------------------------------------------------- */
+
+.rounded,
+input,
+button,
+textarea,
+#header input,
+#footer input,
+#slide-wrapper figcaption,
+.avatar,
+#comments li,
+.faico a,
+#twitter,
+.pagination a,
+.pagination strong {
+    border-radius: 8px;
+}
+
+#header button,
+#footer button {
+    border-radius: 0 8px 8px 0;
+}
+
+#mainav li li:last-child a {
+    border-radius: 0 0 8px 8px;
+}
+
+#mainav li li:first-child a,
+#slide-wrapper figure img,
+#slide-wrapper figure .view:hover::before {
+    border-radius: 8px 8px 0 0;
+}
+
+#slider #slide-tabs li:first-child a {
+    border-radius: 0 0 0 8px;
+}
+
+#slider #slide-tabs li:last-child a {
+    border-radius: 0 0 8px 0;
+}
+
+
+/* ------------------------------------------------------------------------------------------------------------ */
+
+/* ------------------------------------------------------------------------------------------------------------ */
+
+/* ------------------------------------------------------------------------------------------------------------ */
+
+/* ------------------------------------------------------------------------------------------------------------ */
+
+/* ------------------------------------------------------------------------------------------------------------ */
+
+/* Colours
+--------------------------------------------------------------------------------------------------------------- */
+
+body {
+    color: #F9F9F9;
+    background-color: lightgrey;
+}
+
+a {
+    color: #55ABDA;
+}
+
+hr,
+.borderedbox {
+    border-color: #D7D7D7;
+}
+
+label span {
+    color: #FF0000;
+    background-color: inherit;
+}
+
+.rounded {
+    color: inherit;
+    background-color: #F9F9F9;
+}
+
+
+/* Rows */
+
+.row0,
+.row0 a {
+    color: #000000;
+    background-color: lightskyblue;
+}
+
+.row1 {
+    color: #979797;
+    background-color: #06213F;
+}
+
+.row1 a {
+    color: #F9F9F9;
+    background-color: inherit;
+}
+
+.row2,
+.row2 a {
+    color: #06213F;
+    background-color: inherit;
+}
+
+.row3 {
+    color: #979797;
+    background-color: inherit;
+}
+
+.row4 {
+    color: #979797;
+    background-color: inherit;
+}
+
+.row5,
+.row5 a {
+    color: #55ABDA;
+    background-color: #06213F;
+}
+
+
+/* Top Bar */
+
+#topbar li {
+    border-color: #FFFFFF;
+}
+
+
+/* Header */
+
+#header input {
+    color: #979797;
+    background-color: #FFFFFF;
+}
+
+#header button {
+    color: #F9F9F9;
+    background-color: #55ABDA;
+}
+
+
+/* Navigation */
+
+#mainav li a {
+    color: inherit;
+}
+
+#mainav .active a,
+#mainav a:hover,
+#mainav li:hover > a {
+    color: #55ABDA;
+    background-color: inherit;
+}
+
+#mainav li li a,
+#mainav .active li a {
+    color: #FFFFFF;
+    background-color: rgba(0, 0, 0, .9);
+    border-color: rgba(0, 0, 0, .6);
+}
+
+#mainav li li:hover > a,
+#mainav .active .active > a {
+    color: #FFFFFF;
+    background-color: #55ABDA;
+}
+
+#mainav form select {
+    border-color: #D7D7D7;
+}
+
+#breadcrumb a {
+    color: #888888;
+    background-color: inherit;
+}
+
+#breadcrumb li:last-child a {
+    color: #55ABDA;
+}
+
+.container .sidebar nav a {
+    color: inherit;
+    border-color: #D7D7D7;
+}
+
+.container .sidebar nav a:hover {
+    color: #55ABDA;
+}
+
+.pagination a,
+.pagination strong {
+    border-color: #D7D7D7;
+}
+
+.pagination .current strong {
+    color: #FFFFFF;
+    background-color: #06213F;
+}
